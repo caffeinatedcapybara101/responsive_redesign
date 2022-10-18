@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Responsive Redesign</title>
+    <link rel="shortcut icon" type="images/png" href="images/browser_icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, inital-scale=1">
+    <link rel="stylesheet" href="style/responsive_redesign_style.css">
+    <link rel="stylesheet" href="style/slideshow_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <!------------ Heading ------------>
+        <div id="header-bracket">
+            <h1> Responsive Redesign </h1>
+            <h2> October 18, 2022 </h2>
+        </div>
+
+        <!------------ Part 1: Identifying Usability Problems ------------>
+        <div class="bracket">
+            <h2>
+                PART 1: IDENTIFYING USABILITY PROBLEMS
+            </h2>
+        </div>
+        <div class="content">
+            <!-- Accessible Interface -->
+            <h3> Picking a Web Page </h3>
+            <p>
+                I chose the site for <a href="https://www.smallpointcafe.com/">Small Point Cafe.</a>
+                A while ago, my friends and I were looking for coffee shops in the area to explore, and we
+                found Small Point Cafe. We thought it looked like a cute cafe, so we decided to look up the
+                menu before we went. We had a hard time navigating the site, and while we eventually found
+                the menu, we were so annoyed at the site itself that we just chose another coffee shop. When
+                I was thinking about websites for this project, I remembered disliking this particular one and
+                thought it would be a good idea to redesign it.
+            </p>
+
+            <!-- Finding Problems -->
+            <h3> Finding Problems </h3>
+            <p>
+
+            </p>
+
+            <!-- Accessibility -->
+            <h3> Accessibility </h3>
+            <p>
+                For the home page, the WAVE tool doesn't point out any errors or contrast errors on the page.
+                This makes sense given that page mainly consists of images, black text on a white background,
+                and functioning links. There are, however, quite a few warnings. These warnings primarly
+                concern the alternative text of the images. Specifically, many of the images in the slideshow
+                have the same alternative text, and all of the images on the page (the ones in the slideshow and
+                the logo) have alternative text that insufficiently describes the image/its purpose.
+            </p>
+        </div>
+
+        <!------------ Part 2: Visual Redesign ------------>
+        <div class="bracket">
+            <h2>
+                PART 2: VISUAL REDESIGN
+            </h2>
+        </div>
+        <div class="content">
+            <!-- Low-Fidelity Wireframing -->
+            <h3> Low-Fidelity Wireframing </h3>
+            <p>
+                <!-- slideshow of low fidelity wireframes-->
+                <!-- slideshow source:
+                    https://www.w3schools.com/howto/howto_js_slideshow.asp 
+                -->
+            <div class="slideshow-container">
+                <!-- images -->
+                <div class="slides fade">
+                    <img src="images/low_fidelity/low_web.png">
+                    <div class="text">Low-Fidelity Mockup for Webpage</div>
+                </div>
+
+                <div class="slides fade">
+                    <img src="images/low_fidelity/low_tablet.png">
+                    <div class="text">Low-Fidelity Mockup for Tablet</div>
+                </div>
+
+                <div class="slides fade">
+                    <img src="images/low_fidelity/low_phone.png">
+                    <div class="text">Low-Fidelity Mockup for Phone</div>
+                </div>
+
+                <!-- next and previous buttons -->
+                <div class="arrows">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+            </div>
+
+            <!-- dots/circles that show current slide -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            </p>
+
+            <!-- Visual Design Style Guide -->
+            <h3> Visual Design Style Guide </h3>
+            <p>
+
+            </p>
+
+            <!-- High-Fidelity Prototyping -->
+            <h3> High-Fidelity Prototyping </h3>
+            <p>
+
+            </p>
+        </div>
+
+        <!------------ Part 3: Responsive Redesign ------------>
+        <div class="bracket">
+            <h2>
+                PART 3: RESPONSIVE REDESIGN
+            </h2>
+        </div>
+        <div class="content">
+
+        </div>
+    </div>
+
+    <script src="javascript/slideshow.js"></script>
+</body>
