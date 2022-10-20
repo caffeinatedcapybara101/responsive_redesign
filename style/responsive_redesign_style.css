@@ -1,7 +1,7 @@
 /************************* BODY *************************/
 body {
     font-family: 'Karla', sans-serif;
-    margin: 0px;
+    margin: 100px 0px 0 0;
     background-color: #4C5364;
 }
 
@@ -86,9 +86,88 @@ a:hover {
     border-bottom-color: #EEC170;
 }
 
-/************************ handles changes resizing changes ************************/
+/***** table *****/
+.table {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-@media (max-width:934px) {
+.table-header {
+    margin: 2px;
+    border: 2px solid #EEC170;
+    width: 295px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.table-cell {
+    width: 295px;
+    border: 2px solid #EEC170;
+    margin: 2px;
+    height: 440px;
+}
+
+.table-cell ul {
+    padding-left: 25px;
+    margin-right: 5px;
+}
+
+/***** images *****/
+.figures {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.single-figure {
+    display: inline;
+    margin: 5px;
+    padding: 7px;
+    text-align: center;
+    height: min-content;
+}
+
+.single-figure img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    vertical-align: middle;
+}
+
+.single-figure p {
+    width: 100%;
+    vertical-align: middle;
+}
+
+/***** slideshows *****/
+#tablet-phone {
+    display: flex;
+    flex-wrap: flex;
+}
+
+/* #tablet-phone div {
+    width: 50%;
+} */
+
+/************************ handles changes resizing changes ************************/
+@media (max-width:870px) {
+    body {
+        margin-top: 125px;
+    }
+}
+
+@media (max-width:550px) {
+    body {
+        margin-top: 165px;
+    }
+}
+
+@media (max-width:757px) {
     #header-bracket:before {
         height: 175px;
     }
